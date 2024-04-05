@@ -1,0 +1,1 @@
+npm i express jimp uuid nodemon express-handlebars
