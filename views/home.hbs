@@ -1,11 +1,9 @@
-// Formulario para subir una imagen
 <form class="url-form" action="/upload">
   <h1 class="url-title">Convertidor de imágenes a blanco y negro</h1>
   <input class="url-input" type="text" id="img" name="img" placeholder="Ingresa la url de la imagen"/>
   <button class="url-btn" type="submit">Convertir</button>
 </form>
 
-// Manejar errores de URL
 {{#if errorMessage}}
   <script>
     alert("{{ errorMessage }}");
@@ -13,7 +11,6 @@
 {{/if}}
 
 
-// Mostrar imágen subida por el usuario y la imagen procesada
 <div class="image-container">
   {{#if originalImageUrl}}
     <div class="image-card">
